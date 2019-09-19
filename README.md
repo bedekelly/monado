@@ -25,13 +25,13 @@ Monads are just written using the `ABC` module and a mini-type-hierarchy
 created using inherited abstract methods. It's relatively sane code,
 *unlike* how the do-notation is implemented. 
 
-The result of calling `product2(l1, l2)` on two Lists will be a new 
+* The result of calling `product2(l1, l2)` on two Lists will be a new 
 List containing all possible `(x, y)` pairs from the two lists.
 
-Passing in two Option monads gives us a pair `Some((x, y))` if both 
+* Passing in two Option monads gives us a pair `Some((x, y))` if both 
 values are filled, and `Nothing` otherwise.
 
-Passing in two Future monads (not yet written) will give a Future of the
+* Passing in two Future monads (not yet written) will give a Future of the
 combined value `(x, y)`.
 
 This really does work for arbitrary monads. This was hard to get right,
