@@ -19,6 +19,8 @@ def product2(monad_a, monad_b):
     return x, y
 ```
 
+This is somewhat inspired by [Guac](https://github.com/JadenGeller/Guac), although it works on any Python, not just older PyPy.
+
 Monads are just written using the `ABC` module and a mini-type-hierarchy
 created using inherited abstract methods. It's relatively sane code,
 *unlike* how the do-notation is implemented. 
